@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0 , maximum-scale=1.0, user-scalable=0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>FinanceFLow</title>
+
+    <meta name="title" content="FinanceFLow" />
+    <meta name="description" content="FinanceFLow" />
+    <meta name="keyword" content="FinanceFLow" />
+
+    <link rel="canonical" href="https://cfdcircle.vn" />
+    <link rel="icon" href="favicon.ico" />
+
+    <!-- Meta Tag Facebook -->
+    <meta property="og:locale" content="en" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="FinanceFLow" />
+    <meta property="og:description" content="FinanceFLow" />
+    <meta property="og:url" content="FinanceFLow" />
+    <meta property="og:site_name" content="FinanceFLow" />
+    <meta property="og:image" content=FinanceFLow"" />
+
+    <!-- Meta Tag Twitter -->
+    <meta name="twitter:card" content="FinanceFLow" />
+    <meta name="twitter:site" content="FinanceFLow" />
+    <meta name="twitter:title" content="FinanceFLow" />
+    <meta name="twitter:description" content="FinanceFLow" />
+    <meta name="twitter:image" content="FinanceFLow" />
+    <style>
+      /* CSS Loading Here */
+      .loading {
+        width: 100%;
+        height: 100%;
+        background-color: #fff;
+        position: fixed;
+        z-index: 999;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: 0.3s;
+      }
+
+      .loading.--hide {
+        opacity: 0;
+        visibility: hidden;
+      }
+
+      .loading svg {
+        width: 40px;
+      }
+
+      /* Progress Bar */
+      .progress {
+        width: 0%;
+        height: 5px;
+        position: fixed;
+        left: 0;
+        top: 0;
+        background-color: var(--white-cl);
+        z-index: 500;
+      }
+    </style>
+    <link rel="stylesheet" href="dest/style.min.css" />
+    <link rel="stylesheet" href="dest/fonts.css" />
+    <link rel="stylesheet" href="dest/main.js" />
+  </head>
+
+  <body class="homepage">
+    <!--Loading Page-->
+    <!--End Loading Page-->
+    <!--Progress Bar-->
+    <div class="progress"></div>
+    <!--End Progress Bar-->
+    <!--Header-->
+    <header class="header">
+      <div class="container">
+        <div class="header__logo">
+          <a href="index.html"><img src="images/logo.svg" alt="" /></a>
+          <!-- <picture>
+                    <source media="(max-width:375px)" srcset="images/crypto.svg">
+                    <img src="images/crypto.svg" alt="Flowers" style="width:auto;">
+                </picture> -->
+        </div>
+        <ul class="header__menu">
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="tokens.html">Tokens</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+        <div class="header__btn">
+          <a href="#" class="btnmain">Download App</a>
+          <!-- Menu Button -->
+          <div class="btnmenu">
+            <span></span>
+          </div>
+        </div>
+        <div class="nav">
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="blogdetail.html">PRODUCT</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="tokens.html">Tokens</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <img src="images/blur.png" alt="" class="blur" />
+          <a href="#" class="btnmain">Download App</a>
+        </div>
+      </div>
+    </header>
+    <!--End Header-->
+    <main>
+      <div class="error">
+        <div class="container">
+          <p class="error__404 --center">404</p>
+          <img src="images/blur.png" alt="" class="error__blur" />
+          <div class="error__textbox">
+            <h2 class="heading --center --white-cl --h2">Page Not Found</h2>
+            <p class="des --content --center">
+              The page you're looking for can't be found. Double-check the URL
+              and try again. Or click the button below.
+            </p>
+            <div class="error__textbox-btn groupbtn --center">
+              <a href="#" class="download btnmain">View Pring</a>
+              <a href="#" class="btnpricing btnmain">Go Home</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- Javascript -->
+    <script type="text/javascript" src="dest/jsmain.min.js"></script>
+    <script type="text/javascript" src="dest/main.js"></script>
+  </body>
+</html>

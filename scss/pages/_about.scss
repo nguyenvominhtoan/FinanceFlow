@@ -1,0 +1,352 @@
+.about {
+  padding-top: 155px;
+
+  &__textbox {
+    margin-bottom: 96px;
+    @include xxxs {
+      text-align: left;
+      margin-bottom: 56px;
+      .des {
+        text-align: left;
+      }
+    }
+    .des {
+      max-width: 606px;
+    }
+  }
+
+  &__list {
+    position: relative;
+
+    &-textbox {
+      margin-bottom: 0;
+
+      @include xs {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        max-width: 330px;
+        margin: initial;
+      }
+    }
+
+    .blur {
+      position: absolute;
+      height: 1100px;
+      width: 1100px;
+      left: -60%;
+      top: -100%;
+      z-index: -1;
+      pointer-events: none;
+      @include xxs {
+        width: 1000px;
+        left: -90%;
+        top: -55%;
+      }
+      @include xxxs {
+        width: 800px;
+        left: -107%;
+        top: -47%;
+      }
+    }
+
+    &-item {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      gap: var(--gap);
+
+      @include xxs {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+      }
+
+      .group1 {
+        grid-column: 1/7;
+
+        .item {
+          aspect-ratio: initial;
+          @include xxs {
+            display: flex;
+            flex-direction: column;
+
+            .heading {
+              display: flex;
+              flex-direction: column;
+              margin-top: 10px;
+            }
+          }
+
+          .icon {
+            margin-right: 24px;
+
+            @include xxxs {
+              margin-bottom: 8px;
+            }
+          }
+        }
+      }
+
+      .group2 {
+        grid-column: 7/13;
+
+        .item {
+          aspect-ratio: initial;
+
+          @include xxs {
+            display: flex;
+            flex-direction: column;
+
+            .heading {
+              display: flex;
+              flex-direction: column;
+              margin-top: 10px;
+            }
+          }
+
+          .icon {
+            margin-right: 24px;
+
+            @include xxxs {
+              margin-bottom: 8px;
+            }
+          }
+        }
+      }
+    }
+
+    &-btn {
+      width: fit-content;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto;
+      border-radius: 80px;
+
+      &:hover {
+        background-color: var(--blue-hover-cl);
+      }
+    }
+  }
+}
+
+.mission {
+  padding-top: 195px;
+  padding-bottom: 120px;
+
+  @include xs {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    gap: var(--gap);
+
+    @include xs {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__content {
+    .textbox {
+      .heading {
+        margin-bottom: 10px;
+      }
+    }
+
+    p {
+      margin-bottom: 42px;
+    }
+  }
+
+  &__img {
+    width: 641.43px;
+    height: 853px;
+    aspect-ratio: 16/9;
+    right: -9.5%;
+    position: relative;
+    overflow: hidden;
+
+    @include xs {
+      max-width: 412.59px;
+      max-height: 398.9px;
+      right: initial;
+    }
+
+    img {
+      position: absolute;
+      @include mid;
+      min-width: 100%;
+      min-height: 100%;
+      object-fit: cover;
+      transition: 0.4s;
+
+      &:hover {
+        transform: translate(-50%, -50%) scale(1.1);
+      }
+    }
+  }
+}
+
+.timeline {
+  .container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: var(--gap);
+
+    @include xxs {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  &__textbox {
+    grid-column: 1/5;
+
+    @include xxs {
+      max-width: 330px;
+    }
+  }
+
+  &__list {
+    grid-column: 6/13;
+
+    &-year {
+      display: flex;
+      margin-bottom: 50px;
+      box-sizing: border-box;
+      border-bottom: 1px solid var(--white-cl);
+
+      .text {
+        margin-left: 52px;
+
+        .year {
+          margin-bottom: 16px;
+          display: flex;
+          color: var(--white-cl);
+          font-size: var(--text-timeline);
+          line-height: var(--lh-timeline);
+          letter-spacing: var(--ls-timeline);
+          font-family: dmsan;
+        }
+
+        &__box {
+          .des {
+            max-width: 600px;
+            margin-bottom: 31px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.ourtime {
+  padding-top: 65px;
+  padding-bottom: 92px;
+
+  &__textbox {
+    @include xs {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      max-width: 320px;
+      margin: initial;
+    }
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(3, 374px);
+    gap: var(--gap);
+
+    &-item {
+      text-transform: uppercase;
+    }
+
+    @include sm {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    @include xxs {
+      &-item {
+        .info {
+          display: flex;
+          align-items: center;
+        }
+      }
+    }
+  }
+}
+
+.investors {
+  padding-bottom: 224px;
+
+  @include sm {
+    padding-bottom: 100px;
+  }
+
+  &__item {
+    .des {
+      margin: 0 auto;
+      max-width: 496px;
+
+      @include xs {
+        margin-bottom: 20px;
+      }
+    }
+
+    &-company {
+      margin-top: 32px;
+      display: flex;
+
+      @include sm {
+        display: initial;
+      }
+
+      .investors__list-item {
+        display: flex;
+        flex-direction: row;
+
+        @include sm {
+          display: flex;
+          justify-content: space-between;
+          flex-direction: column;
+          align-items: center;
+          margin-top: 40px;
+        }
+
+        .item {
+          display: flex;
+          margin-bottom: 10px;
+        }
+      }
+
+      .investors__list-item:nth-child(2) {
+        @include sm {
+          display: flex;
+          justify-content: space-between;
+          flex-direction: column;
+          align-items: center;
+          margin-top: 10px;
+        }
+      }
+
+      img {
+        margin-right: 66px;
+
+        @include xxs {
+          margin-right: initial;
+          max-width: 134px;
+          max-height: 24px;
+        }
+      }
+    }
+  }
+}

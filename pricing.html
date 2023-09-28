@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0 , maximum-scale=1.0, user-scalable=0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>FinanceFLow</title>
+
+    <meta name="title" content="FinanceFLow" />
+    <meta name="description" content="FinanceFLow" />
+    <meta name="keyword" content="FinanceFLow" />
+
+    <link rel="canonical" href="https://cfdcircle.vn" />
+    <link rel="icon" href="favicon.ico" />
+
+    <!-- Meta Tag Facebook -->
+    <meta property="og:locale" content="en" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="FinanceFLow" />
+    <meta property="og:description" content="FinanceFLow" />
+    <meta property="og:url" content="FinanceFLow" />
+    <meta property="og:site_name" content="FinanceFLow" />
+    <meta property="og:image" content="FinanceFLow" />
+
+    <!-- Meta Tag Twitter -->
+    <meta name="twitter:card" content="FinanceFLow" />
+    <meta name="twitter:site" content="FinanceFLow" />
+    <meta name="twitter:title" content="FinanceFLow" />
+    <meta name="twitter:description" content="FinanceFLow" />
+    <meta name="twitter:image" content="FinanceFLow" />
+    <style>
+      /* CSS Loading Here */
+      .loading {
+        width: 100%;
+        height: 100%;
+        background-color: var(--bg-cl);
+        position: fixed;
+        z-index: 999;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        opacity: 1;
+        visibility: visible;
+        transition: 0.3s;
+      }
+
+      .loading .loading__inner {
+        width: 140px;
+        height: 5px;
+        border-radius: 10px;
+        background-color: var(--blue-hover-cl);
+
+        position: relative;
+        overflow: hidden;
+      }
+
+      .loading .loading__inner .loading__inner-progress {
+        width: 0%;
+        height: 100%;
+        position: absolute;
+        background-color: #fff;
+      }
+
+      .loading .loading__percent {
+        text-align: center;
+        color: #fff;
+        font-size: 17px;
+        margin-top: 16px;
+      }
+
+      .loading.--hide {
+        opacity: 0;
+        visibility: hidden;
+        transition: 0.3s;
+        -webkit-transition: 0.3s;
+      }
+
+      .loading svg {
+        width: 40px;
+      }
+      /* Progress Bar */
+      .progress {
+        width: 0%;
+        height: 5px;
+        position: fixed;
+        left: 0;
+        top: 0;
+        background-color: var(--white-cl);
+        z-index: 500;
+      }
+    </style>
+    <link rel="stylesheet" href="dest/style.min.css" />
+    <link rel="stylesheet" href="dest/fonts.css" />
+    <link rel="stylesheet" href="dest/main.js" />
+  </head>
+
+  <body class="homepage">
+    <!--Loading Page-->
+    <div class="loading">
+      <div class="loading__inner">
+        <div class="loading__inner-progress"></div>
+      </div>
+      <span class="loading__percent">0%</span>
+    </div>
+    <!--End Loading Page-->
+    <!--Progress Bar-->
+    <div class="progress"></div>
+    <!--End Progress Bar-->
+    <!--Header-->
+    <header class="header">
+      <div class="container">
+        <div class="header__logo">
+          <a href="index.html"><img src="images/logo.svg" alt="" /></a>
+        </div>
+        <ul class="header__menu">
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="tokens.html">Tokens</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+        <div class="header__btn">
+          <a href="#" class="btnmain">Download App</a>
+          <!-- Menu Button -->
+          <div class="btnmenu">
+            <span></span>
+          </div>
+        </div>
+        <div class="nav">
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="blogdetail.html">PRODUCT</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="tokens.html">Tokens</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <img src="images/blur.png" alt="" class="blur" />
+          <a href="#" class="btnmain">Download App</a>
+        </div>
+      </div>
+    </header>
+    <!--End Header-->
+    <main>
+      <!--Section About-->
+      <section class="pricing">
+        <div class="container">
+          <div class="pricing__textbox --center">
+            <h2 class="heading --h2 --white-cl">Pricing</h2>
+            <p class="des --center --content">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat
+              nulla suspendisse tortor aenean dis placerat. Scelerisque
+            </p>
+          </div>
+          <div class="pricing__list">
+            <div class="pricing__list-itemtop">
+              <div class="item">
+                <div class="item__img">
+                  <img src="images/sendrec.svg" alt="" />
+                </div>
+                <div class="item__title">Send & receive</div>
+              </div>
+              <div class="item">
+                <div class="item__img">
+                  <img src="images/tranding.svg" alt="" />
+                </div>
+                <div class="item__title">Trading Charts</div>
+              </div>
+              <div class="item">
+                <div class="item__img">
+                  <img src="images/wallet.svg" alt="" />
+                </div>
+                <div class="item__title">Wallet</div>
+              </div>
+              <div class="item">
+                <div class="item__img">
+                  <img src="images/realtime.svg" alt="" />
+                </div>
+                <div class="item__title">Real Time Trading</div>
+              </div>
+            </div>
+            <div class="pricing__list-itembot">
+              <div class="price__card">
+                <div class="price__card-textbox">
+                  <a href="#">Expert</a>
+                  <div class="heading --h2">$ 100 USD</div>
+                  <p class="des">
+                    Lorem ipsum dolor sit amet, ametor consectetur adipiscing
+                    elit. Et nibh.
+                  </p>
+                </div>
+                <div class="price__card-content">
+                  <div class="features">
+                    <div class="features__title">Features</div>
+                    <div class="features__frame">
+                      <div class="features__frame-item">
+                        <div class="dot">
+                          <img src="images/dot.svg" alt="FinanceFlow" />
+                        </div>
+                        <p class="des">Everything included in Basic</p>
+                      </div>
+                      <div class="features__frame-item">
+                        <div class="dot">
+                          <img src="images/dot.svg" alt="FinanceFlow" />
+                        </div>
+                        <p class="des">Trading up to $1MM per month</p>
+                      </div>
+                      <div class="features__frame-item">
+                        <div class="dot">
+                          <img src="images/dot.svg" alt="FinanceFlow" />
+                        </div>
+                        <p class="des">Windows & macOS App</p>
+                      </div>
+                      <div class="features__frame-item">
+                        <div class="dot">
+                          <img src="images/dot.svg" alt="FinanceFlow" />
+                        </div>
+                        <p class="des">Premium Support</p>
+                      </div>
+                    </div>
+                    <div class="features__btn">
+                      <a href="#" class="btnmain">Contact Us</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="price__card">
+                <div class="price__card-textbox">
+                  <a href="#">Basic</a>
+                  <div class="heading --h2">$ 100 USD</div>
+                  <p class="des">
+                    Lorem ipsum dolor sit amet, ametor consectetur adipiscing
+                    elit. Et nibh.
+                  </p>
+                </div>
+                <div class="price__card-content">
+                  <div class="features">
+                    <div class="features__title">Features</div>
+                    <div class="features__frame">
+                      <div class="features__frame-item">
+                        <div class="dot">
+                          <img src="images/dot.svg" alt="FinanceFlow" />
+                        </div>
+                        <p class="des">Everything included in Basic</p>
+                      </div>
+                      <div class="features__frame-item">
+                        <div class="dot">
+                          <img src="images/dot.svg" alt="FinanceFlow" />
+                        </div>
+                        <p class="des">Trading up to $1MM per month</p>
+                      </div>
+                      <div class="features__frame-item">
+                        <div class="dot">
+                          <img src="images/dot.svg" alt="FinanceFlow" />
+                        </div>
+                        <p class="des">Windows & macOS App</p>
+                      </div>
+                      <div class="features__frame-item">
+                        <div class="dot">
+                          <img src="images/dot.svg" alt="FinanceFlow" />
+                        </div>
+                        <p class="des">Premium Support</p>
+                      </div>
+                    </div>
+                    <div class="features__btn">
+                      <a href="#" class="btnmain">Contact Us</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="price__card">
+                <div class="price__card-textbox">
+                  <a href="#">Pro</a>
+                  <div class="heading --h2">$ 100 USD</div>
+                  <p class="des">
+                    Lorem ipsum dolor sit amet, ametor consectetur adipiscing
+                    elit. Et nibh.
+                  </p>
+                </div>
+                <div class="price__card-content">
+                  <div class="features">
+                    <div class="features__title">Features</div>
+                    <div class="features__frame">
+                      <div class="features__frame-item">
+                        <div class="dot">
+                          <img src="images/dot.svg" alt="FinanceFlow" />
+                        </div>
+                        <p class="des">Everything included in Basic</p>
+                      </div>
+                      <div class="features__frame-item">
+                        <div class="dot">
+                          <img src="images/dot.svg" alt="FinanceFlow" />
+                        </div>
+                        <p class="des">Trading up to $1MM per month</p>
+                      </div>
+                      <div class="features__frame-item">
+                        <div class="dot">
+                          <img src="images/dot.svg" alt="FinanceFlow" />
+                        </div>
+                        <p class="des">Windows & macOS App</p>
+                      </div>
+                      <div class="features__frame-item">
+                        <div class="dot">
+                          <img src="images/dot.svg" alt="FinanceFlow" />
+                        </div>
+                        <p class="des">Premium Support</p>
+                      </div>
+                    </div>
+                    <div class="features__btn">
+                      <a href="#" class="btnmain">Contact Us</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--End Section About-->
+    </main>
+    <!--Footer-->
+    <footer>
+      <div class="container">
+        <div class="footer__img">
+          <div class="img">
+            <img src="images/logo.svg" alt="" />
+          </div>
+          <div class="social__list">
+            <div class="social__list-item">
+              <img src="images/instagram.svg" alt="" />
+            </div>
+            <div class="social__list-item">
+              <img src="images/facebook.svg" alt="" />
+            </div>
+            <div class="social__list-item">
+              <img src="images/linked.svg" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="footer__item">
+          <div class="textbox">
+            <div class="menu">
+              <h3 class="heading --white-cl --after">Menu</h3>
+              <div class="menu__item">
+                <div class="item">
+                  <a href="#">Home</a>
+                  <a href="#">About</a>
+                  <a href="#">Pricing</a>
+                </div>
+                <div class="item">
+                  <a href="#">Tokens</a>
+                  <a href="#">Blog</a>
+                  <a href="#">Contact Us</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="social">
+            <div class="social__box">
+              <div class="item --box">
+                <div class="content">
+                  <div class="heading --h3">Download our Application</div>
+                  <p class="des">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Mauris sed nulla integer
+                  </p>
+                </div>
+                <div class="btn groupbtn">
+                  <a href="#" class="btnmain"
+                    ><img src="images/icon__apple.svg" alt="FinanceFlow" />
+                    App Store
+                  </a>
+                  <a href="#" class="btnmain"
+                    ><img src="images/play__icon.svg" alt="FinanceFlow" />
+                    Play store
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="footer__info">© 2023 FinanceFLow, Inc.</p>
+      </div>
+    </footer>
+    <!--End Footer-->
+    <!-- Javascript -->
+    <script type="text/javascript" src="dest/jsmain.min.js"></script>
+    <script type="text/javascript" src="dest/main.js"></script>
+  </body>
+</html>

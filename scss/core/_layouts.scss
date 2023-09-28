@@ -1,0 +1,46 @@
+@-ms-viewport {
+  width: device-width;
+}
+html {
+  font-size: 62.5%; // 1rem = 10px
+}
+
+body {
+  width: 100%;
+  max-width: var(--max-width-page);
+  margin: auto;
+  font-family: pr;
+  font-size: var(--fs-body);
+  line-height: var(--lh-body);
+  overflow: hidden;
+  overflow-y: scroll;
+  background-color: var(--bg-cl);
+  font-family: dmm;
+
+  &.--disable-scroll {
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  .container {
+    width: 100%;
+    max-width: var(--max-width-container);
+    padding-right: var(--gap);
+    padding-left: var(--gap);
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+  }
+
+  .main {
+    position: relative;
+
+    section {
+      //padding: var(--pd-section) 0;
+    }
+  }
+
+  &.--disbale-scroll {
+    overflow: hidden;
+  }
+}

@@ -1,0 +1,193 @@
+.tokens {
+  padding-top: 150px;
+  padding-bottom: 70px;
+
+  @include xs {
+    padding-top: 120px;
+  }
+
+  @include xxs {
+    padding-top: 100px;
+  }
+
+  &__textbox {
+    margin-bottom: 105px;
+
+    .des {
+      max-width: 568px;
+    }
+
+    @include sm {
+      margin-bottom: 25px;
+    }
+
+    @include xxs {
+      text-align: start;
+
+      .des {
+        text-align: start;
+      }
+    }
+  }
+
+  &__table {
+    &-header {
+      box-sizing: border-box;
+      width: 100%;
+      height: 62px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+
+      @include sm {
+        display: none;
+      }
+
+      .heading {
+        display: flex;
+        justify-content: flex-start;
+        color: var(--white-cl);
+
+        &__name {
+          margin-right: 250px;
+        }
+
+        &__des {
+          margin-right: 183px;
+        }
+
+        &__market {
+          margin-right: 157px;
+        }
+
+        &__volume {
+          margin-right: 175px;
+        }
+      }
+    }
+
+    &-item {
+      display: flex;
+      flex-direction: column;
+      color: var(--white-cl);
+      margin-top: 30px;
+
+      .item {
+        @include sm {
+          display: none;
+        }
+
+        margin-bottom: 50px;
+        display: flex;
+        align-items: center;
+        box-sizing: border-box;
+        width: 100%;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+
+        .logo {
+          display: flex;
+          align-items: center;
+          // margin-right: 88px;
+          width: 300px;
+
+          a {
+            color: var(--white-cl);
+            margin-right: 5px;
+            font-family: dmsan;
+            line-height: 20px;
+          }
+
+          img {
+            margin-right: 15px;
+          }
+
+          &__tag {
+            padding: 7px 8px 8px 8px;
+            display: flex;
+            align-items: center;
+            aspect-ratio: 41/26;
+            background: #010d50;
+            border-radius: 1000px;
+            text-transform: uppercase;
+            font-size: var(--text-tokens);
+            line-height: var(--lh-tokens);
+            letter-spacing: var(--ls-tokens);
+          }
+        }
+
+        .des {
+          margin-right: 13px;
+          max-width: 258px;
+          @include overtext(2);
+        }
+
+        .market {
+          margin-right: 12px;
+          margin-right: 80px;
+        }
+
+        .volume {
+          margin-right: 18px;
+          margin-right: 80px;
+        }
+
+        .web {
+          text-decoration: underline;
+        }
+      }
+    }
+
+    &-moblie {
+      .item1 {
+        margin-bottom: 50px;
+        display: flex;
+        align-items: center;
+
+        @include hd {
+          display: none;
+        }
+
+        @include sm {
+          display: block;
+        }
+
+        .logo {
+          margin-top: 20px;
+          display: flex;
+          flex-direction: column;
+
+          &__item {
+            display: flex;
+            align-items: center;
+            box-sizing: border-box;
+            width: 100%;
+            height: 73px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+          }
+
+          &__tag {
+            padding: 7px 8px 8px 8px;
+            display: flex;
+            align-items: center;
+            aspect-ratio: 41/26;
+            background: #010d50;
+            border-radius: 1000px;
+            text-transform: uppercase;
+            font-size: var(--text-tokens);
+            line-height: var(--lh-tokens);
+            letter-spacing: var(--ls-tokens);
+          }
+
+          a {
+            color: var(--white-cl);
+            margin-right: 5px;
+            font-family: dmsan;
+            line-height: 20px;
+          }
+
+          img {
+            margin-right: 15px;
+          }
+        }
+      }
+    }
+  }
+}

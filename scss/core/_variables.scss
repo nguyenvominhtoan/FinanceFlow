@@ -1,0 +1,232 @@
+:root {
+  --gap: 28px;
+  --max-width-page: 2560px;
+  --max-width-container: calc(1198px + calc(var(--gap) * 2));
+
+  // color
+  --blue-cl: #0328ee;
+  --white-cl: #fff;
+  --blue-hover-cl: #010d50;
+  --bg-cl: #010725;
+
+  // font size
+  --fs-h1: 6.6rem;
+  --lh-h1: 8rem;
+  --ls-h1: -1px;
+
+  --fs-h2: 4.2rem;
+  --lh-h2: 5.5rem;
+  --ls-h2: normal;
+
+  --label: 1.8rem;
+  --lh-h3: 2.6rem;
+  --ls-h3: 0.9px;
+
+  --text-btn: 1.6rem;
+  --lh-btn: 1.6rem;
+  --ls-btn: 1.6px;
+
+  --text-menu: 1.4rem;
+  --lh-menu: 1.6rem;
+  --ls-menu: 1.4px;
+
+  --text-tag: 1.4rem;
+  --lh-tag: 1.8rem;
+  --ls-tag: 0.7px;
+
+  --fs-body: 1.8rem;
+  --lh-body: 3.2rem;
+  --ls-body: normal;
+
+  --fs-body-small: 1.6rem;
+  --lh-body-small: 2.6rem;
+  --ls-body-small: normal;
+
+  --text-news: 2.2rem;
+  --lh-text-news: 3.1rem;
+
+  --text-timeline: 2.8rem;
+  --lh-timeline: 3rem;
+  --ls-timeline: 0.28px;
+
+  --text-author: 1.6rem;
+  --lh-author: 1.8rem;
+  --ls-author: 0.8px;
+
+  --text-tokens: 1.2rem;
+  --lh-tokens: 1.2rem;
+  --ls-tokens: 0.6px;
+
+  // general
+  --height-header: 90px;
+  --height-button: 90px;
+  //--pd-section: 120px;
+
+  // time transition
+  --duration: 0.4s --cubic;
+  --cubic: cubic-bezier(0.59, 0.29, 0.15, 0.93);
+
+  // reponsive
+  @include md {
+    --gap: 28px;
+    --max-width-container: calc(1140px + calc(var(--gap) * 2));
+  }
+
+  @include sm {
+    --gap: 28px;
+    --max-width-container: calc(960px + calc(var(--gap) * 2));
+    --fs-h2: 4.2rem;
+    --lh-h2: 5.2rem;
+
+    --fs-h3: 1.8rem;
+    --lh-h3: 2.4rem;
+  }
+
+  @include xs {
+    --gap: 15px;
+    --max-width-container: calc(100% + calc(var(--gap) * 2));
+
+    // font size
+    --fs-h1: 3.8rem;
+    --lh-h1: 4.6rem;
+    --ls-h1: -1px;
+
+    --fs-h2: 2.8rem;
+    --lh-h2: 3.6rem;
+    --ls-h2: normal;
+
+    --label: 1.4rem;
+    --lh-h3: 1.8rem;
+    --ls-h3: 0.7px;
+
+    --text-btn: 1.6rem;
+    --lh-btn: 1.6rem;
+    --ls-btn: 1.6px;
+
+    --fs-body: 1.6rem;
+    --lh-body: 2.6rem;
+    --ls-body: normal;
+
+    --fs-body-small: 1.6rem;
+    --lh-body-small: 2.6rem;
+    --ls-body-small: normal;
+
+    --text-menu: 1.4rem;
+    --lh-menu: 1.6rem;
+    --ls-menu: 1.4px;
+
+    --text-tag: 1.4rem;
+    --lh-tag: 1.8rem;
+    --ls-tag: 0.7px;
+
+    --text-news: 2.2rem;
+    --lh-text-news: 3.1rem;
+
+    --text-timeline: 2.8rem;
+    --lh-timeline: 3rem;
+    --ls-timeline: 0.28px;
+
+    --text-author: 1.6rem;
+    --lh-author: 1.8rem;
+    --ls-author: 0.8px;
+  }
+
+  @include xxs {
+    --max-width-container: calc(100% + calc(var(--gap) * 2));
+    --gap: 15px;
+    // font size
+    --fs-h1: 3.8rem;
+    --lh-h1: 4.6rem;
+    --ls-h1: -1px;
+
+    --fs-h2: 2.8rem;
+    --lh-h2: 3.6rem;
+    --ls-h2: normal;
+
+    --label: 1.8rem;
+    --lh-h3: 2.6rem;
+    --ls-h3: 0.9px;
+
+    --text-btn: 1.6rem;
+    --lh-btn: 1.6rem;
+    --ls-btn: 1.6px;
+
+    --fs-body: 1.6rem;
+    --lh-body: 2.6rem;
+    --ls-body: normal;
+
+    --fs-body1: 1.8rem;
+    --lh-body1: 3.2rem;
+    --ls-body1: normal;
+
+    --fs-body-small: 1.6rem;
+    --lh-body-small: 2.6rem;
+    --ls-body-small: normal;
+
+    --text-menu: 1.4rem;
+    --lh-menu: 1.6rem;
+    --ls-menu: 1.4px;
+
+    --text-tag: 1.4rem;
+    --lh-tag: 1.8rem;
+    --ls-tag: 0.7px;
+
+    --text-news: 2.2rem;
+    --lh-text-news: 3.1rem;
+
+    --text-timeline: 2.8rem;
+    --lh-timeline: 3rem;
+    --ls-timeline: 0.28px;
+
+    --text-author: 1.6rem;
+    --lh-author: 1.8rem;
+    --ls-author: 0.8px;
+  }
+
+  @include xxxs {
+    --max-width-container: calc(100% + calc(var(--gap) * 2));
+    // font size
+    --fs-h1: 3.8rem;
+    --lh-h1: 4.6rem;
+    --ls-h1: -1px;
+
+    --fs-h2: 2.8rem;
+    --lh-h2: 3.6rem;
+    --ls-h2: normal;
+
+    --label: 1.8rem;
+    --lh-h3: 2.6rem;
+    --ls-h3: 0.9px;
+
+    --text-btn: 1.6rem;
+    --lh-btn: 1.6rem;
+    --ls-btn: 1.6px;
+
+    --fs-body: 1.6rem;
+    --lh-body: 2.6rem;
+    --ls-body: normal;
+
+    --fs-body1: 1.8rem;
+    --lh-body1: 3.2rem;
+    --ls-body1: normal;
+
+    --fs-body-small: 1.6rem;
+    --lh-body-small: 2.6rem;
+    --ls-body-small: normal;
+
+    --text-tag: 1.4rem;
+    --lh-tag: 1.8rem;
+    --ls-tag: 0.7px;
+
+    --text-news: 2.2rem;
+    --lh-text-news: 3.1rem;
+
+    --text-timeline: 2.8rem;
+    --lh-timeline: 3rem;
+    --ls-timeline: 0.28px;
+
+    --text-author: 1.6rem;
+    --lh-author: 1.8rem;
+    --ls-author: 0.8px;
+  }
+}

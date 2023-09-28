@@ -1,0 +1,137 @@
+.pricing {
+  padding-top: 135px;
+  padding-bottom: 225px;
+
+  @include xs {
+    padding-bottom: 75px;
+  }
+
+  &__textbox {
+    margin-bottom: 30px;
+
+    .des {
+      max-width: 568px;
+
+      @include xs {
+        text-align: left;
+      }
+    }
+
+    @include xs {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      max-width: 320px;
+      margin: initial;
+    }
+  }
+
+  &__list {
+    &-itemtop {
+      display: flex;
+
+      @include xs {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+
+        .item {
+          margin-bottom: 20px;
+        }
+      }
+
+      .item {
+        margin-right: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        @include sm {
+          margin-right: 55px;
+        }
+
+        &__title {
+          margin-left: 30px;
+          color: var(--white-cl);
+          white-space: nowrap;
+        }
+      }
+    }
+
+    &-itembot {
+      margin-top: 49px;
+      display: flex;
+      justify-content: space-between;
+      gap: var(--gap);
+
+      @include xs {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .price__card {
+        display: flex;
+        flex-direction: column;
+        padding: 48px 30px 42px 32px;
+        // aspect-ratio: 382/612;
+        background: var(--blue-hover-cl);
+        border-radius: 40px;
+
+        &-textbox {
+          color: var(--white-cl);
+          margin-top: 7px;
+          margin-bottom: 25px;
+
+          .heading {
+            margin-top: 12px;
+          }
+
+          a {
+            font-size: var(--text-tag);
+            line-height: var(--lh-tag);
+            letter-spacing: var(--ls-tag);
+            text-transform: uppercase;
+            padding: 9px 14px 9px 15px;
+            background: var(--blue-cl);
+            border-radius: 1000px;
+            color: var(--white-cl);
+          }
+        }
+
+        &-content {
+          color: var(--white-cl);
+          width: 100%;
+
+          .features {
+            &__title {
+              text-transform: uppercase;
+              font-family: dmsan;
+              margin-bottom: 5px;
+            }
+
+            &__frame {
+              margin-bottom: 45px;
+
+              &-item {
+                display: flex;
+                align-items: center;
+
+                .dot {
+                  margin-right: 10px;
+                }
+              }
+            }
+
+            &__btn {
+              width: 100%;
+
+              a {
+                width: 100%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

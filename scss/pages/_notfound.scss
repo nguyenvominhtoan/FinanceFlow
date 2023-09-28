@@ -1,0 +1,116 @@
+.error {
+  padding-top: 253px;
+
+  @include sm {
+    padding-top: 133px;
+  }
+
+  &__404 {
+    font-size: 180px;
+    line-height: 160px;
+    font-family: dmsan;
+    color: var(--blue-cl);
+
+    @include xxs {
+      font-size: 120px;
+      line-height: 120px;
+    }
+  }
+
+  &__blur {
+    position: absolute;
+    top: -350px;
+    z-index: -1;
+    pointer-events: none;
+
+    @include sm {
+      position: absolute;
+      top: -250px;
+    }
+
+    @include xs {
+      position: absolute;
+      top: -200px;
+    }
+
+    @include xxs {
+      position: absolute;
+      left: -130px;
+      max-width: initial;
+      width: 150%;
+    }
+
+    @include xxxs {
+      position: absolute;
+      max-width: initial;
+      width: 170%;
+    }
+  }
+
+  &__textbox {
+    display: flex;
+    flex-direction: column;
+
+    .des {
+      max-width: 557px;
+    }
+
+    &-btn {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      top: 40%;
+      margin-top: 27px;
+
+      @include xxs {
+        display: flex;
+        flex-direction: column;
+      }
+
+      a {
+        font-size: var(--text-btn);
+        line-height: var(--lh-btn);
+        letter-spacing: var(--ls-btn);
+      }
+
+      .download {
+        padding: 27px 32px;
+        max-width: 210px;
+        max-height: 70px;
+
+        @include xxs {
+          padding: 27px 188px;
+          margin-left: initial;
+        }
+
+        @include xxxs {
+          padding: 27px 172px;
+        }
+      }
+
+      .btnpricing {
+        max-width: 191px;
+        max-height: 70px;
+        background: rgba(255, 255, 255, 0.1);
+        @include transition(0.3s);
+
+        @include xxs {
+          padding: 27px 188px;
+          margin-left: initial;
+        }
+
+        @include xxxs {
+          padding: 27px 172px;
+        }
+
+        &:hover {
+          background-color: var(--blue-cl);
+        }
+      }
+
+      button {
+        cursor: pointer;
+      }
+    }
+  }
+}
