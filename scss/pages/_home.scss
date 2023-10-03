@@ -870,9 +870,10 @@
           overflow: hidden;
 
           @include xxs {
-            width: initial;
-            height: initial;
             position: initial;
+            width: 662px;
+            height: 400px;
+            aspect-ratio: initial;
           }
 
           .thumbnail {
