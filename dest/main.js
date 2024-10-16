@@ -147,13 +147,13 @@ function initLoading() {
       handleLoading(percent);
     })
     .on("always", (instance) => {
-      // console.log("always");
+      console.log("always");
     })
     .on("fail", (instance) => {
-      // console.log("fail");
+      console.log("fail");
     })
     .on("done", (instance) => {
-      // console.log("done");
+      console.log("done");
       hideLoading();
     });
 }
